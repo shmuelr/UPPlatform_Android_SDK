@@ -21,7 +21,7 @@ import android.view.ViewGroup;
  */
 public abstract class DefaultFragment extends Fragment {
 
-    protected static String LOG_TAG = DefaultFragment.class.getCanonicalName();
+    protected String TAG = this.getClass().getCanonicalName();
 
     @Override
     public void onInflate(Activity activity, AttributeSet attrs, Bundle savedInstanceState) {

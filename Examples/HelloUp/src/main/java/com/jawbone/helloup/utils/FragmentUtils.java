@@ -4,6 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 
 /**
  * Created by <a href="mailto:marcusandreog@gmail.com">Marcus Gabilheri</a>
@@ -14,7 +15,7 @@ import android.support.v7.app.ActionBarActivity;
  */
 public class FragmentUtils {
 
-    public static void addFragmentToContainer(Fragment fragment, int containerID, ActionBarActivity activity) {
+    public static void addFragmentToContainer(Fragment fragment, int containerID, AppCompatActivity activity) {
         FragmentManager fragmentManager = activity.getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(containerID, fragment)

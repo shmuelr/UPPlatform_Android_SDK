@@ -3,6 +3,7 @@ package com.jawbone.helloup.base;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,10 +18,10 @@ import com.jawbone.helloup.R;
  * @version 1.0
  * @since 2/13/15.
  */
-public abstract class BaseActivity extends ActionBarActivity {
+public abstract class BaseActivity extends AppCompatActivity {
     protected Toolbar toolbar;
     protected FrameLayout containerLayout;
-    protected static String LOG_TAG = BaseActivity.class.getSimpleName();
+    protected String TAG = this.getClass().getCanonicalName();
     protected boolean isLoggedIn = false;
     protected Context context;
 
